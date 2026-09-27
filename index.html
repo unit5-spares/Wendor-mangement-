@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Electrical Repair Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-icon">⚡</div><div><b>Electrical Repair</b><span>Spare Parts • Vendor • Challan</span></div></div>
+    <div class="role-box"><small>ACTIVE PORTAL</small><select id="roleSelect"><option value="maintenance">Maintenance</option><option value="store">Store</option><option value="vendor">Vendor</option><option value="management">Management</option></select></div>
+    <nav id="nav"></nav>
+    <div class="side-foot"><b>AUTO PROFILES LTD.</b><span>Electrical Repair Control System</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="search"><span>⌕</span><input id="search" placeholder="Search part, machine, vendor, request or challan..." /></div><div class="top-actions"><button class="icon-btn" id="bell">🔔<i id="bellCount">3</i></button><div class="user"><div class="avatar">S</div><div><b>Subhash Sona</b><span id="roleLabel">Maintenance</span></div></div></div></header>
+    <div id="content"></div>
+  </main>
+</div>
+<div id="toast"></div>
+<div class="modal-backdrop" id="modal"><div class="modal" id="modalBody"></div></div>
+<script src="app.js"></script>
+</body>
+</html>
